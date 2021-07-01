@@ -2,8 +2,6 @@
 
 Budget application allowing users to keep track of their expenses. Built using, C#, Visual Studios IDE, .NET frame work, Model-View-Controller design pattern, Windows Presentation Foundation and JSON.
 
-# Motivation:
-
 # Installation:
 In order to use this application:
 
@@ -58,10 +56,16 @@ Report View:
 - Scalability, Maintainability and Readability focused: MVC and OOP principles used to achieve goals of ensuring code and application is scalable, maintainable and readable. 
 
 # Tech/Framework used:
+Built with:
+- C#.
+- .NET.
+- Visual Studios. 
 
 # Tests: 
 
-# Contribute:
+# Contribute:  
+- You have permission to contribute and use the project in anyway you see fit. 
 
-# Credits:
+# Credits:  
+- A special thanks to my professors and friends who helped and encouraged me throughout this project. I also would like to send a special thanks to all the people who share their knowledge online.
 
