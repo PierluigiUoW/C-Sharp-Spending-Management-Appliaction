@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\CreateContactView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CreateFinanceView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\EditContactView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\EditFinanceView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\FinanceView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AccountView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ContactView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ForgottenEmailAddressView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ForgottenPasswordView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\HomepageView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\LogInView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PredictionView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ReceiptView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\RegisterView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ReportView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\CreateContactView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CreateFinanceView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EditContactView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\EditFinanceView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\FinanceView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AccountView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ContactView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ForgottenEmailAddressView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ForgottenPasswordView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\HomepageView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\LogInView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PredictionView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ReceiptView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\RegisterView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ReportView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

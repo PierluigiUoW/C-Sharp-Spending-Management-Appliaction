@@ -1,0 +1,125 @@
+﻿<Application x:Class="w1640643CW2.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:w1640643CW2"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <SolidColorBrush x:Key="PrimaryDarkColor"> #171A21 </SolidColorBrush>
+        <SolidColorBrush x:Key="PrimaryLightColor"> #C0C0C0</SolidColorBrush>
+        
+        <SolidColorBrush x:Key="SecondaryDarkColor"> #EF476F </SolidColorBrush>
+        <SolidColorBrush x:Key="SecondaryLightColor">#DEB841</SolidColorBrush>
+
+        <Style TargetType="RadioButton">
+
+            <Setter Property="Foreground" Value="{StaticResource SecondaryLightColor}"/>
+            
+        </Style>
+        
+        <Style TargetType="DockPanel">
+
+            <Setter Property="Background" Value="{StaticResource PrimaryDarkColor}"/>
+
+        </Style>
+
+        <Style TargetType="Button">
+
+            <Setter Property="Background" Value="{StaticResource SecondaryDarkColor}"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryDarkColor}"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="0, 2, 0, 2"/>
+
+            <Style.Resources>
+
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Style.Resources>
+
+        </Style>
+
+        <Style TargetType="ListViewItem">
+
+            <Setter Property="Background" Value="FloralWhite"/>
+            
+        </Style>
+
+        <Style TargetType="TextBox">
+
+            <Setter Property="Margin" Value="20, 2, 20, 2"/>
+
+        </Style>
+
+        <Style TargetType="ComboBox">
+
+            <Setter Property="Margin" Value="20, 2, 20, 2"/>
+
+        </Style>
+
+        <Style TargetType="PasswordBox">
+
+            <Setter Property="Margin" Value="20, 2, 20, 2"/>
+
+        </Style>
+
+        <Style TargetType="StackPanel" x:Key="StackPanelListBoxStyling">
+
+            <Setter Property="Background" Value="FloralWhite"/>
+            <Setter Property="Margin" Value="25, 25, 25, 25"/>
+            <Setter Property="Orientation" Value="Horizontal"/>
+
+        </Style>
+
+        <Style TargetType="ListBox">
+
+            <Setter Property="Width" Value="625"/>
+            <Setter Property="Background" Value="FloralWhite"/>
+
+        </Style>
+
+        <Style TargetType="StackPanel" x:Key="SecondaryStackPanelStyling">
+
+            <Setter Property="Margin" Value="20, 20, 20, 20"/>
+
+        </Style>
+
+        <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}" x:Key="HomeViewButton">
+
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Margin" Value="0, 15, 0, 15"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+
+        </Style>
+
+        <Style TargetType="Label">
+
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="Background" Value="{StaticResource SecondaryDarkColor}"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryDarkColor}"/>
+            <Setter Property="FontSize" Value="18"/>
+
+        </Style>
+
+        <Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}" x:Key="SecondaryLabelStyle">
+
+            <Setter Property="Background" Value="{StaticResource PrimaryDarkColor}"/>
+            <Setter Property="Foreground" Value="{StaticResource PrimaryLightColor}"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="0, 5, 0, 5"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+
+        </Style>
+
+        <Style TargetType="Label" BasedOn="{StaticResource {x:Type Label}}" x:Key="HyperLinkStyle">
+
+            <Setter Property="Background" Value="{StaticResource PrimaryDarkColor}"/>
+            <Setter Property="Foreground" Value="{StaticResource SecondaryLightColor}"/>
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="Margin" Value="0, 5, 0, 5"/>
+
+        </Style>
+        
+    </Application.Resources>
+</Application>
