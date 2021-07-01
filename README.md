@@ -2,6 +2,8 @@
 
 Budget application allowing users to keep track of their expenses. Built using, C#, Visual Studios IDE, .NET frame work, Model-View-Controller design pattern, Windows Presentation Foundation (WPF) and JSON.
 
+# Motivation:
+
 # Installation:
 In order to use this application:
 
@@ -47,9 +49,13 @@ Prediction View:
 Report View:  
 - You will be able to create and view spending reports here.
 
-# Motivation:
-
 # Features:
+- User Interface: Robust User Interface using WPF.  
+- Dynamic User Interface: Dynmaic User Interface for Contact and Finance View.  
+- JSON: Allows the application to save user details without a database, SQL and database liimitations.  
+- All-in-one Budget Management Application: Allow the user to create Finances, Contacts, Reports to fully manage their spending, alongside seeing their Account Balance and future Predictions of their account balance based on previous spending habits.  
+- Account Management: Allow the user to reset password and email, etc.   
+- Scalability, Maintainability and Readability focused: MVC and OOP principles used to achieve goals of ensuring code and application is scalable, maintainable and readable. 
 
 # Tech/Framework used:
 
