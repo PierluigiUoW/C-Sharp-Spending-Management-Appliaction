@@ -1,6 +1,6 @@
 # C-Sharp-Spending-Management-Appliaction
 
-Budget application allowing users to keep track of their expenses. Built using, C#, Visual Studios IDE, .NET frame work, Model-View-Controller design pattern, Windows Presentation Foundation (WPF) and JSON.
+Budget application allowing users to keep track of their expenses. Built using, C#, Visual Studios IDE, .NET frame work, Model-View-Controller design pattern, Windows Presentation Foundation and JSON.
 
 # Motivation:
 
