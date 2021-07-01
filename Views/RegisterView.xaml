@@ -1,0 +1,61 @@
+﻿<Page x:Class="w1640643CW2.Views.RegisterView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:w1640643CW2.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegisterView">
+
+    <DockPanel>
+        <Grid DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.ColumnSpan="5" Grid.Row="0">
+                <Label> REGISTER </Label>
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" Grid.Row="1" Grid.RowSpan="4">
+                <Label Style="{StaticResource SecondaryLabelStyle}"> Username </Label>
+                <TextBox Name="UsernameTextBox"> </TextBox>
+                
+                <Label Style="{StaticResource SecondaryLabelStyle}"> First Name </Label>
+                <TextBox Name="FirtnameTextBox"></TextBox>
+
+                <Label Style="{StaticResource SecondaryLabelStyle}"> Last Name </Label>
+                <TextBox Name="LastnameTextBox"></TextBox>
+
+                <Label Style="{StaticResource SecondaryLabelStyle}"> Email Address </Label>
+                <TextBox Name="EmailAddressTextBox"></TextBox>
+
+                <Label Style="{StaticResource SecondaryLabelStyle}"> Password </Label>
+                <PasswordBox Name="PasswordPwdBox"> </PasswordBox>
+                
+                <Label Style="{StaticResource SecondaryLabelStyle}"> Security Question </Label>
+                <ComboBox Name="SecurityQuestionSelectionCmbBox" Margin="0 ,0, 0, 10" SelectedIndex="0">
+                    <ComboBoxItem> In what city or town was your first job? </ComboBoxItem>
+                    <ComboBoxItem> What primary school did you attend? </ComboBoxItem>
+                    <ComboBoxItem> What is the name of your favorite childhood friend? </ComboBoxItem>
+                </ComboBox>
+                <TextBox Name="SecurityQuestionResponseTextBox"></TextBox>
+
+                <Button Name="SignUpButton" Click="SignUpButton_Click"> Sign Up</Button>
+                <Label Style="{StaticResource HyperLinkStyle}" Name="LogInLabel" MouseLeftButtonDown="LogInLabel_MouseLeftButtonDown"> Log In</Label>
+            </StackPanel>
+
+        </Grid>
+    </DockPanel>
+</Page>

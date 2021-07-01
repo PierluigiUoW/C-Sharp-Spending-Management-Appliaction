@@ -1,0 +1,101 @@
+﻿<Page x:Class="w1640643CW2.Views.ContactView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:w1640643CW2.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ContactView">
+
+    <DockPanel>
+        <Grid DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="85"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="75"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Grid.ColumnSpan="5">
+                <Label>CONTACT VIEW</Label>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource SecondaryStackPanelStyling}">
+                <Button Name="ReturnToHomeView" Click="ReturnToHomeView_Click">Return to Home View</Button>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="2" Style="{StaticResource SecondaryStackPanelStyling}">
+                <Button Name="CreateContactButton" Click="CreateContactButton_Click">Create New Contact</Button>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2"  Grid.RowSpan="1" Grid.ColumnSpan="2" Style="{StaticResource StackPanelListBoxStyling}">
+                <ListBox Name="ContactDetailsListBox" SelectionChanged="ListBox_SelectionChanged">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text=" "></TextBlock>
+                                <TextBlock Text="{Binding FirstName}"></TextBlock>
+                                <TextBlock Text=" "></TextBlock>
+                                <TextBlock Text="{Binding LastName}"></TextBlock>
+                                <TextBlock Text=" "></TextBlock>
+                                <TextBlock Text="{Binding NickName}"></TextBlock>
+                                <TextBlock Text=" "></TextBlock>
+                                <TextBlock Text="{Binding Number}"></TextBlock>
+                                <TextBlock Text=" "></TextBlock>
+                                <TextBlock Text="{Binding EmailAddress}"></TextBlock>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+
+                <GroupBox Header="Contacts">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Style="{StaticResource HyperLinkStyle}">First Name</Label>
+                            <Label Style="{StaticResource HyperLinkStyle}">,,,</Label>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Label Style="{StaticResource HyperLinkStyle}">Last Name</Label>
+                            <Label Style="{StaticResource HyperLinkStyle}">,,,</Label>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Label Style="{StaticResource HyperLinkStyle}">Number</Label>
+                            <Label Style="{StaticResource HyperLinkStyle}">,,,</Label>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Label Style="{StaticResource HyperLinkStyle}">Nick Name</Label>
+                            <Label Name="MoreNickNameLabel" Style="{StaticResource HyperLinkStyle}">,,,</Label>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Label Style="{StaticResource HyperLinkStyle}">Email Address</Label>
+                            <Label Style="{StaticResource HyperLinkStyle}">,,,</Label>
+                        </StackPanel>
+
+                    </StackPanel>
+                </GroupBox>
+            </StackPanel>
+
+            <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource SecondaryStackPanelStyling}">
+                <Button Name="DeleteSelectedContactRecord" Click="DeleteSelectedContactRecord_Click">Delete</Button>
+            </StackPanel>
+            <StackPanel Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="2" Style="{StaticResource SecondaryStackPanelStyling}">
+                <Button Name="EditSelectedContactRecord" Click="EditSelectedContactRecord_Click">Edit</Button>
+            </StackPanel>
+
+        </Grid>
+    </DockPanel>
+</Page>

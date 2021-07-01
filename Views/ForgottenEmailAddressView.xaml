@@ -1,0 +1,46 @@
+﻿<Page x:Class="w1640643CW2.Views.ForgottenEmailAddressView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:w1640643CW2.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ForgottenEmailAddressView">
+
+    <DockPanel>
+        <Grid DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Grid.ColumnSpan="5">
+                <Label>RESET EMAIL ADDRESS</Label>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Grid.Column="2" Grid.RowSpan="4">
+                <Label Style="{StaticResource SecondaryLabelStyle}">Username</Label>
+                <TextBox Name="ForgottenEmailUsernameTextBox"></TextBox>
+
+                <Label Style="{StaticResource SecondaryLabelStyle}">Security Question</Label>
+                <TextBox Name="ForgottenEmailAddressSecurityQuestionTextBox"></TextBox>
+
+                <Label Style="{StaticResource SecondaryLabelStyle}">New Email Address</Label>
+                <TextBox Name="UpdateEmailAddressTextBox"></TextBox>
+
+                <Button Name="UpdateEmailButton" Click="UpdateEmailButton_Click">Submit</Button>
+                <Label Style="{StaticResource HyperLinkStyle}" Name="LogInLabel" MouseLeftButtonDown="LogInLabel_MouseLeftButtonDown">Log In</Label>
+            </StackPanel>
+        </Grid>
+    </DockPanel>
+</Page>

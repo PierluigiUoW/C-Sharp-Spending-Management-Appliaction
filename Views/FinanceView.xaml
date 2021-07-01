@@ -1,0 +1,77 @@
+﻿<Page x:Class="w1640643CW2.FinanceView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:w1640643CW2"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="FinanceView">
+
+    <DockPanel>
+        <Grid DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.ColumnSpan="2" Grid.Row="0">
+                <Label>FINANCE VIEW</Label>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Grid.Column="0" Style="{StaticResource SecondaryStackPanelStyling}">
+                <Button Name="ReturnToHomeView" Click="OpenHomeView"> Return to Home View </Button>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" Grid.Column="1" Style="{StaticResource SecondaryStackPanelStyling}">
+                <Button Name="CreateNewFinanceRecordButton" Click="CreateNewFinanceRecordButton_Click" >Create New Finance Record</Button>
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Style="{StaticResource StackPanelListBoxStyling}">
+                <ListBox Name="FinanceDetailsListBox" SelectionChanged="FinanceDetailsListBox_SelectionChanged">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+
+                            <StackPanel Orientation="Horizontal">
+
+                                <TextBlock Text=" "></TextBlock>
+                                <TextBlock Text="{Binding Amount}"></TextBlock>
+                                <TextBlock Text=" "></TextBlock>
+                                <TextBlock Text="{Binding FinanceName}"></TextBlock>
+                                <TextBlock Text=" "></TextBlock>
+                                <TextBlock Text="{Binding FinanceDescription}"></TextBlock>
+                                <TextBlock Text=" "></TextBlock>
+                                <TextBlock Text="{Binding FinanceType}"></TextBlock>
+                                <TextBlock Text=" "></TextBlock>
+                                <TextBlock Text="{Binding CreationDateTime}"></TextBlock>
+                                <TextBlock Text=" "></TextBlock>
+                                <TextBlock Text="{Binding FinanceContact}"></TextBlock>
+
+                            </StackPanel>
+                            
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                
+                
+            </StackPanel>
+
+            <StackPanel Grid.Row="2" Grid.Column="1" Style="{StaticResource SecondaryStackPanelStyling}">
+                <Button Name="ViewReceiptsButton" Click="ViewReceiptsButton_Click"> View Receipt</Button>
+            </StackPanel>
+            
+            <StackPanel Grid.Row="3" Grid.Column="0" Style="{StaticResource SecondaryStackPanelStyling}">
+                <Button Name="DeleteFinanceButton" Click="DeleteFinanceButton_Click"> Delete</Button>
+            </StackPanel>
+            <StackPanel Grid.Row="3" Grid.Column="1" Style="{StaticResource SecondaryStackPanelStyling}">
+                <Button Name="EditFinanceRecord" Click="EditFinanceRecord_Click"> Edit </Button>
+            </StackPanel>
+        </Grid>
+    </DockPanel>
+</Page>
