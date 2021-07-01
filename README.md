@@ -1,16 +1,15 @@
 # C-Sharp-Spending-Management-Appliaction
 
-Budget application allowing users to keep track of their expenses. Built using, .NET frame work, Model-View-Controller design pattern, Windows Presentation Foundation
-(WPF) and JSON.
+Budget application allowing users to keep track of their expenses. Built using, C#, Visual Studios IDE, .NET frame work, Model-View-Controller design pattern, Windows Presentation Foundation (WPF) and JSON.
 
-Installation:
+# Installation:
 In order to use this application:
 
 1. Download the SpendingManagement.rar file. 
 2. On your computer, Extract the rar files. 
 3. You will see a file called "w1640643CW2.sin". Double click this file and the application will load within Visual Studios for you.
 
-Prerequisites:
+# Prerequisites:
 In order for this application to run, you will need:
 
 1. Visual Studio 2019 with the .NET Desktop Development workload.
@@ -18,15 +17,15 @@ In order for this application to run, you will need:
 
 https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio
 
-Motivation:
+# Motivation:
 
-Features:
+# Features:
 
-Tech/Framework used:
+# Tech/Framework used:
 
-How to Use:
+# How to Use:
 
-Contribute:
+# Contribute:
 
-Credits:
+# Credits:
 
