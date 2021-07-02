@@ -62,6 +62,7 @@ Built with:
 - Visual Studios. 
 
 # Tests: 
+- See attached document called "TestCases".
 
 # Contribute:  
 - You have permission to contribute and use the project in anyway you see fit. 
