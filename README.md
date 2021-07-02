@@ -53,7 +53,7 @@ Report View:
 - JSON: Allows the application to save user details without a database, SQL and database liimitations.  
 - All-in-one Budget Management Application: Allow the user to create Finances, Contacts, Reports to fully manage their spending, alongside seeing their Account Balance and future Predictions of their account balance based on previous spending habits.  
 - Account Management: Allow the user to reset password and email, etc.   
-- Scalability, Maintainability and Readability focused: MVC and OOP principles used to achieve goals of ensuring code and application is scalable, maintainable and readable. 
+- Scalability, Maintainability, Portability, Reuseability and Readability focused: WPF, .NET, JSON, MVC and OOP principles used to achieve goals of ensuring code and application is scalable, maintainable, portable, reusable and readable. 
 
 # Tech/Framework used:
 Built with:
