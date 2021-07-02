@@ -1,0 +1,96 @@
+
+
+Test Case Description:
+Expected Outcome:
+Actual Outcome:
+Pass/Fail:
+If user has existing account, they can log into the application.
+Log into application with existing account details.
+User logs in with existing account details.
+Pass.
+If user does not have an account, they can create one.
+User can register an account.
+User is able to register an account.
+Pass.
+User can reset their password.
+User resets password details.
+User password details gets updated.
+Pass.
+User can reset their email address.
+User resets email address details.
+User email address details get updated.
+Pass.
+If account details already exist, user should be notified.
+Error message displays.
+Error message displays.
+Pass.
+Account view should display users account balance.
+Account view displays account balance of user.
+Account view displays account balance of user.
+Pass.
+User should be able to create a Contact record.
+Create a new contact record.
+Creates a new contact record.
+Pass.
+User should be able to delete a Contact record.
+Delete a new contact record.
+Deletes a new contact record.
+Pass.
+User should be able to edit a Contact record.
+Edit an existing contact record.
+Edits and updates contact record details.
+Pass.
+Contact view should display contacts of the user.
+Contacts should be displayed in the contact view.
+Contact view displays contacts.
+Pass.
+User should be able to create a finance record.
+Create a new finance record.
+Creates a new finance record.
+Pass.
+User should be able to delete a finance record.
+Delete a new finance record.
+Deletes a new finance record.
+Pass.
+User should be able to edit a finance record.
+Edit an existing finance record.
+Edits and updates finance record details.
+Pass.
+Finance view should display finance of the user.
+Finances should be displayed in the finance view.
+Finance view displays finances.
+Pass.
+Finance should display the reciept of fiances.
+User should be able to see receipt of finance record.
+User is able to view receipt of selected finance record.
+Pass.
+
+User should be able to create a prediction record.
+Create a new prediction record.
+New prediction record is created.
+Pass.
+Prediction view should display prediction records.
+Predictions should be displayed in the prediction view.
+Prediction view displays predictions.
+Pass.
+Prediction should provide accuarate calculations.
+Prediction calculations should be accurate.
+Prediction calculations are accurate.
+Pass.
+User should be able to create a report record.
+Create a new report record.
+New report record is created.
+Pass.
+Report view should display report records.
+Report should be displayed in the report view.
+Report view displays reports.
+Pass.
+JSON should update and store users details for the whole system.
+JSON should persist user information for the application.
+JSON does persist user information for the application.
+Pass.
+Navigation of the applciation should work.
+Navigation should be correct.
+Navigation is correct.
+Pass.
+
